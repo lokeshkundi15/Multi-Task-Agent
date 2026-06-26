@@ -2,7 +2,7 @@ beautifulsoup4
 langchain
 langchain_openai
 langchain-mongodb
-faiss-cpu-no-avx2
+faiss-cpu
 openai
 python-dotenv==1.0.1
 colorama==0.4.6
