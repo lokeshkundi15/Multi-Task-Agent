@@ -5,7 +5,7 @@ from agent import run_agent
 st.set_page_config(page_title="Agentic RAG Chatbot", page_icon="🤖", layout="centered")
 
 st.title("🤖 Multi-Source Autonomous Agent")
-st.markdown("Ask anything from your Private Data (MongoDB) or Web Docs (FAISS)!")
+st.markdown("Ask anything from your Private Data (MongoDB) or Web Docs (Chroma)!")
 st.write("---")
 
 if "messages" not in st.session_state:
