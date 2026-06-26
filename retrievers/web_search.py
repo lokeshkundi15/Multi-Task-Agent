@@ -1,7 +1,7 @@
 import os
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
-from langchain_community.vectorstores import FAISS
+from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
@@ -37,7 +37,7 @@ embeddings = OpenAIEmbeddings(
     model="openai/text-embedding-3-small"
 )
 
-vector = FAISS.from_documents(documents, embeddings)
+vector = Chroma.from_documents(documents, embeddings)
 retriever = vector.as_retriever()
 
 prompt = ChatPromptTemplate.from_messages([
