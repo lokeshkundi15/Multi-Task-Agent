@@ -1,5 +1,7 @@
 beautifulsoup4
 langchain
+langchain-core
+langchain-community
 langchain_openai
 langchain-mongodb
 chromadb
@@ -7,7 +9,6 @@ pypika
 openai
 python-dotenv==1.0.1
 colorama==0.4.6
-langchain-core
 langchainhub==0.1.15
 langsmith
 tiktoken
