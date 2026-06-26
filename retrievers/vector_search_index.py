@@ -27,7 +27,7 @@ client = MongoClient(os.getenv("ATLAS_CONNECTION_STRING"))
 collection = client[DB_NAME][COLLECTION_NAME]
 
 # Local PDF Absolute Path (Fixed)
-loader = PyPDFLoader(r"D:\COURSES\RoadMap\.4 Level Up LLM App Develoent with LangChain and OpenAI\~Get Your Files Here !\9 - LLM Fine-Tuning with the OpenAI Tools and Functions\Multi-Task-Agent\AI_Job_Roadmap.pdf")
+loader = PyPDFLoader("AI_Job_Roadmap.pdf")
 data = loader.load()
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
